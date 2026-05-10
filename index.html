@@ -1,38 +1,139 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
   <title>NRNLT</title>
 
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      background: #111;
-      color: white;
-      font-family: sans-serif;
+      background: #000;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+
+      min-height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      overflow: hidden;
+    }
+
+    .container {
       text-align: center;
-      padding-top: 120px;
     }
 
     h1 {
-      font-size: 56px;
-      margin-bottom: 20px;
+      font-size: 72px;
+      font-weight: 700;
+      letter-spacing: 8px;
+      margin-bottom: 24px;
     }
 
-    p {
-      color: #aaa;
-      font-size: 20px;
+    .subtitle {
+      font-size: 28px;
+      color: #b5b5b5;
+      margin-bottom: 80px;
+      letter-spacing: 1px;
     }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 34px;
+    }
+
+    .social-links a {
+      width: 68px;
+      height: 68px;
+
+      background: #fff;
+      color: #000;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      text-decoration: none;
+
+      font-size: 30px;
+
+      transition: all 0.25s ease;
+    }
+
+    .social-links a:hover {
+      transform: translateY(-4px);
+      opacity: 0.7;
+    }
+
+    @media (max-width: 768px) {
+
+      h1 {
+        font-size: 48px;
+        letter-spacing: 5px;
+      }
+
+      .subtitle {
+        font-size: 20px;
+        margin-bottom: 60px;
+      }
+
+      .social-links {
+        gap: 20px;
+      }
+
+      .social-links a {
+        width: 58px;
+        height: 58px;
+        font-size: 24px;
+      }
+    }
+
   </style>
 </head>
 
 <body>
 
-  <h1>NRNLT</h1>
+  <div class="container">
 
-  <p>
-    No Resonance, No Life.
-  </p>
+    <h1>NRNLT</h1>
+
+    <div class="subtitle">
+      No Resonance, No Life.
+    </div>
+
+    <div class="social-links">
+
+      <a href="https://www.instagram.com/nrnlt.official/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+
+      <a href="https://www.tiktok.com/@no_resonance_no_li" target="_blank">
+        <i class="fa-brands fa-tiktok"></i>
+      </a>
+
+      <a href="https://x.com/nrnlt_info" target="_blank">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+
+      <a href="https://www.youtube.com/@no_resonance_no_life" target="_blank">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+
+    </div>
+
+  </div>
 
 </body>
 </html>
